@@ -1,0 +1,13 @@
+// 自定义首页按钮样式
+.home .hero .action-button {
+  // 修改按钮颜色
+  background-color: #3eaf7c;
+  // 修改按钮大小
+  padding: 0.8rem 1.6rem;
+  // 修改按钮圆角
+  border-radius: 4px;
+  // 修改按钮悬停效果
+  &:hover {
+    background-color: #4abf8a;
+  }
+} 
