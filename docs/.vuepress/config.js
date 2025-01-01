@@ -18,7 +18,7 @@ export default defineUserConfig({
   title: '我的博客',
   description: '个人博客网站',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/blog/favicon.png' }],
     ['meta', { name: 'author', content: '您的名字' }],
     ['meta', { name: 'keywords', content: '关键词1, 关键词2' }]
   ],
