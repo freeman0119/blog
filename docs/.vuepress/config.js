@@ -43,7 +43,10 @@ export default defineUserConfig({
         children: [
           { text: '基础概念', link: '/web3/basics/' },
           { text: '智能合约', link: '/web3/smart-contracts/' },
-          { text: 'DApp开发', link: '/web3/dapp/' }
+          { text: 'DApp开发', link: '/web3/dapp/' },
+          { text: 'openzeppelin', link: '/web3/openzeppelin/' },
+          { text: 'hardhat', link: '/web3/hardhat/' },
+
         ]
       },
       // { text: '关于', link: '/about/' }
@@ -122,14 +125,66 @@ export default defineUserConfig({
           ]
         }
       ],
-      '/web3/': [
+      '/web3/basics/': [
         {
-          text: 'Web3 开发',
+          text: '基础概念',
           children: [
             '',
-            'blockchain-basics',
-            'ethereum-development',
-            'solidity-programming'
+            'advanced-concepts',
+            'high-concepts',
+            // 'cryptography',
+            // 'consensus',
+            // 'architecture',
+          ]
+        }
+      ],
+      '/web3/smart-contracts/': [
+        {
+          text: '智能合约',
+          children: [
+            '',
+            'solidity-basics',
+            'security',
+            'upgrades'
+          ]
+        }
+      ],
+      '/web3/dapp/': [
+        {
+          text: 'DApp 开发',
+          children: [
+            '',              // DApp 介绍
+            'web3js',       // Web3.js 使用指南
+            'interactions',  // DApp 与智能合约交互
+            'ethers',       // Ethers.js 使用指南
+            'libraries',    // DApp 常用库
+            'web3-compare', // Web3.js vs Ethers.js
+            'best-practices' // DApp 开发注意事项
+          ]
+        }
+      ],
+      '/web3/openzeppelin/': [
+        {
+          text: 'OpenZeppelin',
+          children: [
+            '',  // 介绍
+            'contracts', // 常用合约
+            'upgrades',  // 可升级合约
+            'security',  // 安全工具
+            'defender'   // Defender平台
+          ]
+        }
+      ],
+      '/web3/hardhat/': [
+        {
+          text: 'Hardhat',
+          children: [
+            '',          // 介绍
+            'setup',     // 环境配置 
+            'testing',   // 测试
+            'deploy',    // 部署
+            'plugins',   // 插件使用
+            'debugging'  // 调试技巧
           ]
         }
       ]
