@@ -4,9 +4,15 @@ import { searchPlugin } from '@vuepress/plugin-search'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { getDirname, path } from '@vuepress/utils'
+
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   bundler: viteBundler(),
+  alias: {
+    '@theme/styles': path.resolve(__dirname, 'styles')
+  },
   base: '/blog/',
   lang: 'zh-CN',
   title: '我的博客',
@@ -18,17 +24,18 @@ export default defineUserConfig({
   ],
   theme: defaultTheme({
     home: '/',
+    contributors: false,
     navbar: [
       { text: '首页', link: '/' },
       {
         text: '前端开发',
         children: [
           { text: 'JavaScript进阶', link: '/frontend/javascript/' },
-          { text: 'TypeScript', link: '/frontend/typescript/' },
-          { text: 'Vue', link: '/frontend/vue/' },
-          { text: 'React', link: '/frontend/react/' },
-          { text: '工程化', link: '/frontend/engineering/' },
-          { text: '性能优化', link: '/frontend/performance/' }
+          // { text: 'TypeScript', link: '/frontend/typescript/' },
+          // { text: 'Vue', link: '/frontend/vue/' },
+          // { text: 'React', link: '/frontend/react/' },
+          // { text: '工程化', link: '/frontend/engineering/' },
+          // { text: '性能优化', link: '/frontend/performance/' }
         ]
       },
       {
@@ -47,10 +54,12 @@ export default defineUserConfig({
           text: 'JavaScript进阶',
           children: [
             '',
+            'promiseA+',
             'es6-plus',
-            'async-programming',
-            'design-patterns',
-            'functional-programming'
+            'hybrid',
+            // 'async-programming',
+            // 'design-patterns',
+            // 'functional-programming'
           ]
         }
       ],

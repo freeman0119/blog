@@ -11,3 +11,83 @@
     background-color: #4abf8a;
   }
 } 
+
+// Sublime Monokai Theme colors for code blocks
+div[class*='language-'] {
+  background-color: #272822 !important;
+  
+  code {
+    color: #f8f8f2 !important;
+    font-size: 1em !important;
+    line-height: 1.6 !important;
+    font-family: 'Consolas', 'Monaco', monospace !important;
+    
+    .token {
+      &.keyword {
+        color: #f92672 !important;  // let, const, function 等关键字
+      }
+      &.string {
+        color: #e6db74 !important;  // 字符串
+      }
+      &.function {
+        color: #a6e22e !important;  // 函数名
+      }
+      &.number {
+        color: #ae81ff !important;  // 数字
+      }
+      &.operator {
+        color: #f8f8f2 !important;  // 操作符
+      }
+      &.comment {
+        color: #75715e !important;  // 注释
+      }
+      &.punctuation {
+        color: #f8f8f2 !important;  // 标点符号
+      }
+      &.class-name {
+        color: #a6e22e !important;  // 类名
+      }
+      &.parameter {
+        color: #fd971f !important;  // 参数
+      }
+      &.property {
+        color: #66d9ef !important;  // 属性
+      }
+      &.boolean {
+        color: #ae81ff !important;  // 布尔值
+      }
+      &.constant {
+        color: #66d9ef !important;  // 常量
+      }
+      &.method {
+        color: #66d9ef !important;  // then, catch 等方法
+      }
+      &.variable {
+        color: #f8f8f2 !important;  // 变量名
+      }
+    }
+  }
+}
+
+// 增加代码块的对比度
+div[class*='language-'] {
+  border: 1px solid #1d1d1d !important;
+  margin: 1em 0 !important;
+  padding: 1em 0 !important;
+  
+  &::before {
+    color: #f8f8f2 !important;
+    background-color: #1d1d1d !important;
+  }
+}
+
+// 行内代码样式
+:not(div[class*='language-']) > code {
+  color: #c41d7f;
+  background-color: #f9f2f4;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-family: 'Consolas', monospace;
+  margin: 0 0.2em;
+} 
