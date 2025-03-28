@@ -18,12 +18,12 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '前端开发', link: '/docs/frontend/react/principle' },
-      { text: 'Web3', link: '/docs/web3/' }
+      { text: 'Web3', link: '/docs/web3/blockchain/basic' }
     ],
     sidebar: {
       '/docs/frontend':[{
         text: 'React',
-        collapsed: true,
+        // collapsed: true,
         items: [
           { text: '原理', link: '/docs/frontend/react/principle' },
           { text: '使用', link: '/docs/frontend/react/usage' },
@@ -34,7 +34,7 @@ export default defineConfig({
       },
       {
         text: 'Vue',
-        collapsed: true,
+        // collapsed: true,
         items: [
           { text: '原理', link: '/docs/frontend/vue/principle' },
           { text: '使用', link: '/docs/frontend/vue/usage' },
@@ -43,8 +43,24 @@ export default defineConfig({
         ]
       },
       {
-        text: '高级进阶',
-        collapsed: true,
+        text: '性能优化',
+        // collapsed: true,
+        items: [
+          {text: '性能优化', link: '/docs/frontend/perf-optimize/perf-optimize'},
+        ]
+      },
+      // {
+      //   text: '微前端',
+      //   // collapsed: true,
+      //   items: [
+      //     {text: '概览', link: '/docs/frontend/micro-frontend/'},
+      //     {text: 'Single-spa', link: '/docs/frontend/micro-frontend/single-spa'},
+      //     {text: 'Qiankun', link: '/docs/frontend/micro-frontend/qiankun'},
+      //   ]
+      // },
+      {
+        text: '高阶',
+        // collapsed: true,
         items: [
           { text: '实现promise', link: '/docs/frontend/high-advanced/promise' },
           { text: 'Hybrid原理', link: '/docs/frontend/high-advanced/js-bridge' },
@@ -52,9 +68,33 @@ export default defineConfig({
       }],
       '/docs/web3':[
         {
-          text: 'dapp',
-          collapsed: true,
-          items: []
+          text: '区块链基础',
+          // collapsed: true,
+          items: [
+            { text: '基本概念', link: '/docs/web3/blockchain/basic' },
+          ]
+        },
+        {
+          text: 'Dapp',
+          // collapsed: true,
+          items: [
+            { text: '基础', link: '/docs/web3/dapp/basic' },
+          ]
+        },
+        {
+          text: '智能合约',
+          // collapsed: true,
+          items: [
+            { text: '基础', link: '/docs/web3/smart-contract/basic' },
+          ]
+        },
+        {
+          text: '项目分析',
+          // collapsed: true,
+          items: [
+            { text: 'uniswap', link: '/docs/web3/project-analysis/uniswap' },
+            { text: 'aave', link: '/docs/web3/project-analysis/aave' },
+          ]
         }
       ]
     },

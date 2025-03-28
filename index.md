@@ -8,13 +8,13 @@ hero:
   actions:
     - theme: brand
       text: 前端开发
-      link: /docs/frontend/react/usage
+      link: /docs/frontend/react/principle
     - theme: alt
       text: Web3世界
-      link: /web3/
-    - theme: alt
-      text: GitHub
-      link: https://github.com/yourusername/blog2
+      link: /docs/web3/blockchain/basic
+    # - theme: alt
+    #   text: GitHub
+    #   link: https://github.com/yourusername/blog2
 
 features:
   - icon: ⚛️
