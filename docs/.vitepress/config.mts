@@ -12,7 +12,6 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "前端框架", link: "/frontend/" },
       { text: "工程化", link: "/engineering/" },
-      // { text: "AI 技术", link: "/ai/" },
       { text: "Web3开发", link: "/web3/" },
       { text: "关于我", link: "/about" },
     ],
@@ -72,44 +71,6 @@ export default defineConfig({
           ],
         },
       ],
-      // "/ai/": [
-      //   {
-      //     text: "AI 工具应用",
-      //     items: [
-      //       { text: "ChatGPT 开发实践", link: "/ai/chatgpt/" },
-      //       { text: "GitHub Copilot 使用技巧", link: "/ai/copilot/" },
-      //       { text: "Cursor 编程助手", link: "/ai/cursor/" },
-      //       { text: "AI 代码生成工具", link: "/ai/code-generation/" },
-      //     ],
-      //   },
-      //   {
-      //     text: "AI 驱动开发",
-      //     items: [
-      //       { text: "提示工程技巧", link: "/ai/prompt-engineering/" },
-      //       { text: "AI 辅助调试", link: "/ai/ai-debugging/" },
-      //       { text: "自动化测试生成", link: "/ai/automated-testing/" },
-      //       { text: "代码重构优化", link: "/ai/code-refactoring/" },
-      //     ],
-      //   },
-      //   {
-      //     text: "前端 AI 应用",
-      //     items: [
-      //       { text: "AI 聊天机器人集成", link: "/ai/chatbot-integration/" },
-      //       { text: "图像识别应用", link: "/ai/image-recognition/" },
-      //       { text: "自然语言处理", link: "/ai/nlp-frontend/" },
-      //       { text: "推荐系统实现", link: "/ai/recommendation-system/" },
-      //     ],
-      //   },
-      //   {
-      //     text: "AI 技术理解",
-      //     items: [
-      //       { text: "机器学习基础", link: "/ai/ml-basics/" },
-      //       { text: "深度学习概念", link: "/ai/deep-learning/" },
-      //       { text: "大语言模型原理", link: "/ai/llm-principles/" },
-      //       { text: "AI 技术趋势分析", link: "/ai/tech-trends/" },
-      //     ],
-      //   },
-      // ],
       "/web3/": [
         {
           text: "Web3 开发",

@@ -327,7 +327,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 ### .dockerignore 优化
 
-```dockerignore
+```
 # .dockerignore
 node_modules
 npm-debug.log

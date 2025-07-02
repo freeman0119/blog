@@ -4,10 +4,6 @@
 
 ## 🚀 最新文章
 
-- [React Hooks 最佳实践](/frontend/react/hooks-best-practices)
-- [Vue 3 Composition API 深度解析](/frontend/vue/composition-api)
-- [前端性能优化实战指南](/frontend/performance/optimization-guide)
-
 ## 📚 分类导航
 
 ### React 技术栈
