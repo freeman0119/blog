@@ -20,19 +20,19 @@ hero:
 features:
   - icon: ⚡️
     title: 前端框架深度解析
-    details: 深入探讨 React、Vue 等主流框架的原理、最佳实践和性能优化技巧
+    details: 深入探讨 React、Vue 等主流框架的原理、最佳实践和跨端开发技巧
   - icon: 🛠️
     title: 工程化实战经验
-    details: 分享 Webpack、Vite 等构建工具的配置优化和工程化最佳实践
+    details: 分享 Webpack、Vite、Docker 等工具的配置优化和DevOps最佳实践
+  - icon: 🤖
+    title: AI 驱动开发
+    details: 探索 ChatGPT、Copilot 等AI工具在开发中的应用，提升编程效率
   - icon: 🚀
     title: Web3 技术探索
     details: 从智能合约到 DeFi，探索区块链技术在前端开发中的应用
   - icon: 📈
     title: 性能优化专题
     details: 深入研究前端性能优化策略，提升用户体验和开发效率
-  - icon: 🎯
-    title: 实战项目分享
-    details: 分享真实项目开发经验，包括架构设计、技术选型和问题解决
   - icon: 💡
     title: 技术趋势洞察
     details: 关注前端技术发展趋势，分享对新技术的思考和实践
