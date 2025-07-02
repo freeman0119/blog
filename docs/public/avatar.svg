@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <!-- 背景渐变 -->
+    <radialGradient id="roomBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 屏幕发光效果 -->
+    <filter id="screenGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 阴影效果 -->
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 房间背景 -->
+  <circle cx="100" cy="100" r="100" fill="url(#roomBg)"/>
+  
+  <!-- 代码雨背景效果 -->
+  <g fill="#10b981" opacity="0.1" font-family="'Courier New', monospace" font-size="6">
+    <text x="15" y="20">01100110</text>
+    <text x="140" y="25">11010001</text>
+    <text x="20" y="180">10110011</text>
+    <text x="150" y="185">01011100</text>
+    <text x="170" y="100">10101010</text>
+    <text x="10" y="100">11001100</text>
+  </g>
+  
+  <!-- 桌子 -->
+  <rect x="30" y="140" width="140" height="8" rx="4" fill="#374151" filter="url(#shadow)"/>
+  <rect x="35" y="148" width="130" height="40" fill="#4b5563"/>
+  
+  <!-- 显示器支架 -->
+  <rect x="95" y="120" width="10" height="20" fill="#6b7280"/>
+  <rect x="85" y="135" width="30" height="5" rx="2" fill="#6b7280"/>
+  
+  <!-- 显示器边框 -->
+  <rect x="50" y="65" width="100" height="65" rx="6" fill="#111827" filter="url(#shadow)"/>
+  
+  <!-- 显示器屏幕 -->
+  <rect x="55" y="70" width="90" height="55" rx="3" fill="#0d1117" filter="url(#screenGlow)"/>
+  
+  <!-- 屏幕内容 - VS Code 界面 -->
+  <!-- 标题栏 -->
+  <rect x="55" y="70" width="90" height="8" fill="#21262d"/>
+  <circle cx="60" cy="74" r="1.5" fill="#ff5f56"/>
+  <circle cx="65" cy="74" r="1.5" fill="#ffbd2e"/>
+  <circle cx="70" cy="74" r="1.5" fill="#27ca3f"/>
+  
+  <!-- 侧边栏 -->
+  <rect x="55" y="78" width="15" height="47" fill="#161b22"/>
+  
+  <!-- 代码区域 -->
+  <rect x="70" y="78" width="75" height="47" fill="#0d1117"/>
+  
+  <!-- 代码内容 -->
+  <g fill="#58a6ff" font-family="'Courier New', monospace" font-size="4">
+    <text x="72" y="85">function App() {</text>
+    <text x="74" y="90">return (</text>
+    <text x="76" y="95">&lt;div&gt;</text>
+    <text x="78" y="100">&lt;h1&gt;Hello World&lt;/h1&gt;</text>
+    <text x="76" y="105">&lt;/div&gt;</text>
+    <text x="74" y="110">);</text>
+    <text x="72" y="115">}</text>
+  </g>
+  
+  <!-- 语法高亮 -->
+  <g fill="#ff7b72" font-family="'Courier New', monospace" font-size="4">
+    <text x="72" y="85">function</text>
+    <text x="74" y="90">return</text>
+  </g>
+  
+  <!-- 键盘 -->
+  <rect x="65" y="155" width="70" height="20" rx="3" fill="#374151" filter="url(#shadow)"/>
+  <g fill="#4b5563">
+    <rect x="68" y="158" width="4" height="3" rx="1"/>
+    <rect x="73" y="158" width="4" height="3" rx="1"/>
+    <rect x="78" y="158" width="4" height="3" rx="1"/>
+    <rect x="83" y="158" width="4" height="3" rx="1"/>
+    <rect x="88" y="158" width="4" height="3" rx="1"/>
+    <rect x="93" y="158" width="4" height="3" rx="1"/>
+    <rect x="98" y="158" width="4" height="3" rx="1"/>
+    <rect x="103" y="158" width="4" height="3" rx="1"/>
+    <rect x="108" y="158" width="4" height="3" rx="1"/>
+    <rect x="113" y="158" width="4" height="3" rx="1"/>
+    <rect x="118" y="158" width="4" height="3" rx="1"/>
+    <rect x="123" y="158" width="4" height="3" rx="1"/>
+    <rect x="128" y="158" width="4" height="3" rx="1"/>
+    
+    <!-- 第二行键盘 -->
+    <rect x="70" y="162" width="4" height="3" rx="1"/>
+    <rect x="75" y="162" width="4" height="3" rx="1"/>
+    <rect x="80" y="162" width="4" height="3" rx="1"/>
+    <rect x="85" y="162" width="4" height="3" rx="1"/>
+    <rect x="90" y="162" width="4" height="3" rx="1"/>
+    <rect x="95" y="162" width="4" height="3" rx="1"/>
+    <rect x="100" y="162" width="4" height="3" rx="1"/>
+    <rect x="105" y="162" width="4" height="3" rx="1"/>
+    <rect x="110" y="162" width="4" height="3" rx="1"/>
+    <rect x="115" y="162" width="4" height="3" rx="1"/>
+    <rect x="120" y="162" width="4" height="3" rx="1"/>
+    <rect x="125" y="162" width="4" height="3" rx="1"/>
+    
+    <!-- 空格键 -->
+    <rect x="85" y="168" width="30" height="4" rx="2"/>
+  </g>
+  
+  <!-- 鼠标 -->
+  <ellipse cx="145" cy="165" rx="6" ry="8" fill="#4b5563" filter="url(#shadow)"/>
+  <ellipse cx="145" cy="165" rx="4" ry="6" fill="#6b7280"/>
+  
+  <!-- 程序员小人 -->
+  <!-- 椅子 -->
+  <rect x="15" y="130" width="25" height="35" fill="#374151" filter="url(#shadow)"/>
+  <rect x="12" y="160" width="30" height="8" rx="4" fill="#4b5563"/>
+  
+  <!-- 身体 -->
+  <ellipse cx="27" cy="115" rx="12" ry="18" fill="#1f2937"/>
+  
+  <!-- 胳膊 -->
+  <ellipse cx="35" cy="120" rx="4" ry="10" fill="#1f2937" transform="rotate(15 35 120)"/>
+  <ellipse cx="19" cy="120" rx="4" ry="10" fill="#1f2937" transform="rotate(-15 19 120)"/>
+  
+  <!-- 手 -->
+  <circle cx="42" cy="135" r="3" fill="#fbbf24"/>
+  <circle cx="12" cy="135" r="3" fill="#fbbf24"/>
+  
+  <!-- 头部 -->
+  <circle cx="27" cy="95" r="12" fill="#fbbf24"/>
+  
+  <!-- 头发 -->
+  <path d="M15 90 Q15 80 27 78 Q39 80 39 90 Q37 100 32 102 Q22 102 17 100 Q15 95 15 90 Z" fill="#374151"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="23" cy="94" r="1.5" fill="#1f2937"/>
+  <circle cx="31" cy="94" r="1.5" fill="#1f2937"/>
+  
+  <!-- 嘴巴 -->
+  <path d="M24 100 Q27 102 30 100" stroke="#1f2937" stroke-width="1" fill="none"/>
+  
+  <!-- 咖啡杯 -->
+  <rect x="160" y="148" width="8" height="10" fill="#7c2d12" filter="url(#shadow)"/>
+  <rect x="159" y="147" width="10" height="2" fill="#92400e"/>
+  <ellipse cx="164" cy="149" rx="4" ry="1" fill="#451a03"/>
+  <path d="M168 150 Q170 148 170 152 Q170 154 168 154" stroke="#7c2d12" stroke-width="1" fill="none"/>
+  
+  <!-- 热气 -->
+  <g fill="#d1d5db" opacity="0.6">
+    <circle cx="162" cy="143" r="0.5"/>
+    <circle cx="165" cy="141" r="0.5"/>
+    <circle cx="167" cy="143" r="0.5"/>
+  </g>
+  
+  <!-- 屏幕反光到脸上 -->
+  <circle cx="27" cy="95" r="8" fill="#10b981" opacity="0.1"/>
+  
+  <!-- 代码符号装饰 -->
+  <g fill="#10b981" opacity="0.3" font-family="'Courier New', monospace" font-size="8">
+    <text x="180" y="30">&lt;/&gt;</text>
+    <text x="10" y="40">{}</text>
+    <text x="175" y="180">npm</text>
+    <text x="5" y="180">git</text>
+  </g>
+</svg> 
