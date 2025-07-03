@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /frontend/
+      link: /frontend/react/concurrent-features
     - theme: alt
       text: 关于我
       link: /about

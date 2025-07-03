@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "前端技术博客",
+  title: "Freeman's Blog",
   description: "记录前端开发、工程化和Web3的技术探索之路",
   base: "/blog/",
 
@@ -10,8 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "前端框架", link: "/frontend/" },
-      { text: "工程化", link: "/engineering/" },
+      { text: "前端开发", link: "/frontend/react/concurrent-features" },
       { text: "Web3开发", link: "/web3/" },
       { text: "关于我", link: "/about" },
     ],
@@ -19,11 +18,48 @@ export default defineConfig({
     sidebar: {
       "/frontend/": [
         {
-          text: "前端框架",
+          text: "JavaScript",
+          items: [{ text: "Promise 实现", link: "/frontend/js/promiseA+" }],
+        },
+        {
+          text: "React 技术栈",
           items: [
-            { text: "React 技术栈", link: "/frontend/react/" },
-            { text: "Vue 技术栈", link: "/frontend/vue/" },
+            {
+              text: "React 18 并发特性深度解析",
+              link: "/frontend/react/concurrent-features",
+            },
+            {
+              text: "Fiber 架构原理与实现机制",
+              link: "/frontend/react/fiber-architecture",
+            },
+            {
+              text: "React Hooks 实现原理",
+              link: "/frontend/react/hooks-best-practices",
+            },
           ],
+        },
+        {
+          text: "Vue 技术栈",
+          items: [
+            {
+              text: "Vue3 响应式原理",
+              link: "/frontend/vue/reactivity-principles",
+            },
+            { text: "Vue3 新特性", link: "/frontend/vue/vue3-new-features" },
+            {
+              text: "Vue 中组件通讯方式",
+              link: "/frontend/vue/component-communication",
+            },
+            {
+              text: "keep-alive 实现原理",
+              link: "/frontend/vue/keep-alive-principle",
+            },
+            { text: "Vue2 响应式原理", link: "/frontend/vue/vue2-reactivity" },
+          ],
+        },
+        {
+          text: "工程化",
+          link: "/frontend/engineering/",
         },
         {
           text: "跨端技术",
@@ -37,35 +73,7 @@ export default defineConfig({
           text: "前端架构",
           items: [
             { text: "微前端", link: "/frontend/microfrontend/" },
-            { text: "状态管理", link: "/frontend/state-management/" },
-            { text: "设计模式", link: "/frontend/design-patterns/" },
-          ],
-        },
-      ],
-      "/engineering/": [
-        {
-          text: "构建工具",
-          items: [
-            { text: "Webpack 深度解析", link: "/engineering/webpack/" },
-            { text: "Vite 构建优化", link: "/engineering/vite/" },
-            { text: "包管理与发布", link: "/engineering/package/" },
-          ],
-        },
-        {
-          text: "DevOps & 部署",
-          items: [
-            { text: "Docker 容器化", link: "/engineering/docker/" },
-            { text: "CI/CD 实践", link: "/engineering/cicd/" },
-            { text: "Nginx 配置", link: "/engineering/nginx/" },
-            { text: "云服务部署", link: "/engineering/cloud/" },
-          ],
-        },
-        {
-          text: "开发工具",
-          items: [
-            { text: "Git 版本控制", link: "/engineering/git/" },
-            { text: "代码规范", link: "/engineering/code-standards/" },
-            { text: "调试技巧", link: "/engineering/debugging/" },
+            { text: "Monorepo 架构", link: "/frontend/monorepo/" },
           ],
         },
       ],
