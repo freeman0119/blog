@@ -19,7 +19,11 @@ export default defineConfig({
       "/frontend/": [
         {
           text: "JavaScript",
-          items: [{ text: "Promise 实现", link: "/frontend/js/promiseA+" }],
+          items: [
+            { text: "Promise 实现", link: "/frontend/js/promiseA+" },
+            { text: "事件循环", link: "/frontend/js/event-loop" },
+            { text: "PWA", link: "/frontend/js/pwa" },
+          ],
         },
         {
           text: "React 技术栈",
