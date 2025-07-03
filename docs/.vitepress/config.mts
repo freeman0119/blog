@@ -22,17 +22,15 @@ export default defineConfig({
           text: "前端框架",
           items: [
             { text: "React 技术栈", link: "/frontend/react/" },
-            { text: "Vue 生态", link: "/frontend/vue/" },
-            { text: "性能优化", link: "/frontend/performance/" },
+            { text: "Vue 技术栈", link: "/frontend/vue/" },
           ],
         },
         {
           text: "跨端技术",
           items: [
-            { text: "移动端开发", link: "/frontend/mobile/" },
             { text: "JSbridge 通信", link: "/frontend/jsbridge/" },
             { text: "小程序开发", link: "/frontend/miniprogram/" },
-            { text: "Electron 桌面应用", link: "/frontend/electron/" },
+            { text: "Electron", link: "/frontend/electron/" },
           ],
         },
         {
