@@ -24,6 +24,7 @@ export default defineConfig({
             { text: "事件循环", link: "/frontend/js/event-loop" },
             { text: "PWA", link: "/frontend/js/pwa" },
             { text: "ES6+ 新特性全解析", link: "/frontend/js/es6+" },
+            { text: "Web Worker", link: "/frontend/js/web-worker" },
           ],
         },
         {
