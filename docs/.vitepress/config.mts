@@ -23,6 +23,7 @@ export default defineConfig({
             { text: "Promise 实现", link: "/frontend/js/promiseA+" },
             { text: "事件循环", link: "/frontend/js/event-loop" },
             { text: "PWA", link: "/frontend/js/pwa" },
+            { text: "ES6+ 新特性全解析", link: "/frontend/js/es6+" },
           ],
         },
         {
